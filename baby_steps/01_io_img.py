@@ -2,7 +2,7 @@ import cv2
 import os
 
 # get the path of the image
-img_path = os.path.join('.', 'test.png')
+img_path = os.path.join('computer-vision/baby_steps', 'test.png')
 
 # read the image
 img = cv2.imread(img_path)
