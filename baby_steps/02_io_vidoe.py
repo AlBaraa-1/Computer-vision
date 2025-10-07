@@ -2,7 +2,7 @@ import cv2
 import os
 
 # get the path of the video
-video_path = os.path.join('computer-vision/baby_steps', 'test.mp4')
+video_path = os.path.join('computer-vision/baby_steps/assets', 'test.mp4')
 print(video_path)
 
 # read the video 

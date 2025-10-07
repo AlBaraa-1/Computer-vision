@@ -1,7 +1,7 @@
 import cv2
 import os
 
-img_path = os.path.join('computer-vision/baby_steps', 'test.png')
+img_path = os.path.join('computer-vision/baby_steps/assets', 'test.png')
 img = cv2.imread(img_path)
 
 # get the size of the image
