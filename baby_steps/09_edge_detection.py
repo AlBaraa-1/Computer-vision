@@ -12,7 +12,7 @@ cv2.waitKey(0)
 # code for interactive edge detection tuning
 """
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-gray = cv2.GaussianBlur(gray, (5,5), 0)
+gray = cv2.medianBlur(gray, 5)
 
 cv2.namedWindow("edges")
 
