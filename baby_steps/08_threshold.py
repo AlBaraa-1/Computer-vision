@@ -15,7 +15,7 @@ cv2.waitKey(0)
 """
 
 # Adaptive Thresholding
-img2 = cv2.imread('computer-vision/baby_steps/assets/image.png')
+img2 = cv2.imread('computer-vision/baby_steps/assets/threshold_test.png')
 img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 thresh = cv2.adaptiveThreshold(img2, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 21, 30)
 
