@@ -18,7 +18,7 @@
 ## 🌟 Features
 
 - 🤖 **Machine Learning** - SVM classifier with automatic hyperparameter tuning
-- 🎯 **High Accuracy** - Achieves 100% accuracy on the test dataset
+- 🎯 **High Accuracy** - Achieves 99.92% accuracy on the test dataset
 - 📊 **Grid Search** - Automatic optimization of model parameters
 - 🖼️ **Image Processing** - Resizes and preprocesses images for optimal classification
 - 📈 **Detailed Metrics** - Comprehensive performance evaluation with confusion matrix
@@ -115,17 +115,17 @@ Accuracy: 100.00%
 ```
 Classification Report:
                precision    recall  f1-score   support
-           0       1.00      1.00      1.00       608
-           1       1.00      1.00      1.00       609
+           0       1.00      1.00      1.00       609
+           1       1.00      1.00      1.00       608
     accuracy                           1.00      1217
 
 Confusion Matrix:
- [[608   0]
-  [  0 609]]
+ [[609   0]
+  [  1 607]]
 ```
 
 **Key Metrics:**
-- ✅ **Accuracy:** 100%
+- ✅ **Accuracy:** 99.92%
 - ✅ **Precision:** 1.00 for both classes
 - ✅ **Recall:** 1.00 for both classes
 - ✅ **F1-Score:** 1.00 for both classes
