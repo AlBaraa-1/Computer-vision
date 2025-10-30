@@ -1,5 +1,5 @@
 # Dataset folder
-dataset/
+data/
 
 # Model files
 models/*.pkl
