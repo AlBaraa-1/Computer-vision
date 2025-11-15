@@ -52,7 +52,7 @@ Text detection and extraction from images
 - OCR implementation
 - Preprocessing utilities
 
-### 📄 [Text Summarizer](./text_summrizer)
+### 📄 [Text Summarizer](./text_summarizer)
 Automatic text summarization tool
 - NLP-based text analysis
 - Customizable summary length
