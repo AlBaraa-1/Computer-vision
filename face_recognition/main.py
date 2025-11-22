@@ -2,7 +2,7 @@
 Real-Time Face Recognition System
 A Python application that performs real-time face detection and recognition using OpenCV and face_recognition library.
 
-Author: [Your Name]
+Author: [AlBaraa63]
 Date: October 2025
 """
 
