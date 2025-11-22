@@ -61,7 +61,9 @@ def main():
     Main function that runs the face recognition system.
     Captures video from webcam, detects faces, and performs recognition.
     """
-    folder_path = 'faces'
+    # Get the directory where this script is located
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    folder_path = os.path.join(script_dir, 'faces')
     images, class_names = load_images_from_folder(folder_path)
     encode_list_known = find_encodings(images)
     print('Encoding Complete')
