@@ -39,13 +39,13 @@ def main():
             mask = cv2.inRange(hsv_image, lower_limit, upper_limit)
             mask = cv2.medianBlur(mask, 3)
             
-            # Get bounding box
-            mask_img = Image.fromarray(mask)
-            bbox = mask_img.getbbox()
+            # Find contours to detect multiple objects
+            contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
             
-            if bbox is not None:
-                x1, y1, x2, y2 = bbox
-                frame = cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 5)
+            for contour in contours:
+                if cv2.contourArea(contour) > 500:  # Filter small noise
+                    x, y, w, h = cv2.boundingRect(contour)
+                    frame = cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 5)
             
             # Convert BGR to RGB for Streamlit display
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
